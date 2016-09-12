@@ -14,6 +14,7 @@
 		FCCABA171D8750280025E590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCCABA151D8750280025E590 /* LaunchScreen.storyboard */; };
 		FCCABA211D8766E30025E590 /* PlaySongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCABA201D8766E20025E590 /* PlaySongViewController.swift */; };
 		FCCABA241D876E8D0025E590 /* OVOMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCABA231D876E8D0025E590 /* OVOMusic.swift */; };
+		FCCABA291D8773CB0025E590 /* OVOSongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCABA281D8773CB0025E590 /* OVOSongCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FCCABA181D8750280025E590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCCABA201D8766E20025E590 /* PlaySongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySongViewController.swift; sourceTree = "<group>"; };
 		FCCABA231D876E8D0025E590 /* OVOMusic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OVOMusic.swift; sourceTree = "<group>"; };
+		FCCABA281D8773CB0025E590 /* OVOSongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OVOSongCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		FCCABA0B1D8750270025E590 /* OVOMusicAndVideos */ = {
 			isa = PBXGroup;
 			children = (
+				FCCABA251D87734A0025E590 /* TableViewCells */,
 				FCCABA221D876E5C0025E590 /* Models */,
 				FCCABA1F1D8753210025E590 /* Views */,
 				FCCABA1E1D8753110025E590 /* Controllers */,
@@ -92,6 +95,14 @@
 				FCCABA231D876E8D0025E590 /* OVOMusic.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		FCCABA251D87734A0025E590 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				FCCABA281D8773CB0025E590 /* OVOSongCell.swift */,
+			);
+			name = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				FCCABA211D8766E30025E590 /* PlaySongViewController.swift in Sources */,
 				FCCABA241D876E8D0025E590 /* OVOMusic.swift in Sources */,
 				FCCABA0D1D8750270025E590 /* AppDelegate.swift in Sources */,
+				FCCABA291D8773CB0025E590 /* OVOSongCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +346,7 @@
 				FCCABA1D1D8750280025E590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
