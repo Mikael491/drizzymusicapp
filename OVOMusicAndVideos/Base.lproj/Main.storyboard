@@ -19,10 +19,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ovobanner" translatesAutoresizingMaskIntoConstraints="NO" id="Fqf-a6-uPu"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hy0-I7-2mj">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="P8L-BI-Vev">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvZ-4J-xp9">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="tas-WL-Upu"/>
+                                                    <constraint firstAttribute="height" constant="40" id="vvs-X8-qnE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Top Videos">
+                                                    <color key="titleColor" red="0.57647058823529407" green="0.49803921568627452" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boX-aw-ys9">
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhi-fa-gfq">
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2GG-5X-s4E"/>
+                                    <constraint firstItem="P8L-BI-Vev" firstAttribute="centerX" secondItem="hy0-I7-2mj" secondAttribute="centerX" id="M1P-sI-Fd2"/>
+                                    <constraint firstItem="P8L-BI-Vev" firstAttribute="centerY" secondItem="hy0-I7-2mj" secondAttribute="centerY" id="bfg-2I-NWv"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Fqf-a6-uPu" secondAttribute="trailing" id="9WH-Wq-Jl7"/>
+                            <constraint firstItem="hy0-I7-2mj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Uhl-SJ-HD9"/>
+                            <constraint firstAttribute="trailing" secondItem="hy0-I7-2mj" secondAttribute="trailing" id="e3S-Br-AFQ"/>
+                            <constraint firstItem="hy0-I7-2mj" firstAttribute="top" secondItem="Fqf-a6-uPu" secondAttribute="bottom" id="lnD-qw-3IX"/>
                             <constraint firstItem="Fqf-a6-uPu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="t8g-kY-xiy"/>
                             <constraint firstItem="Fqf-a6-uPu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vaS-bG-pze"/>
                         </constraints>
