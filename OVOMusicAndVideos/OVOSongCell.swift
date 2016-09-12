@@ -9,6 +9,9 @@
 import UIKit
 
 class OVOSongCell: UITableViewCell {
+    
+    @IBOutlet weak var videoImage: UIImageView!
+    @IBOutlet weak var videoTitle: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +22,14 @@ class OVOSongCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    //updates the cell with the model class objects information
+    func updateUI(ovoSong: OVOMusic) {
+        videoTitle.text = ovoSong.videoTitle
+        
+        //TODO: set cell image
+        
     }
     
     
