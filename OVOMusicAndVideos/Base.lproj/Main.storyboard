@@ -59,7 +59,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pT1-fx-8A2">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCell" rowHeight="101" id="0EQ-gc-56k">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OVOSongCell" rowHeight="101" id="0EQ-gc-56k" customClass="OVOSongCell" customModule="OVOMusicAndVideos" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0EQ-gc-56k" id="Hlg-Ei-3wk">
@@ -89,6 +89,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.50196081400000003" green="0.11989206701240983" blue="0.14758260086894523" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="videoImage" destination="4XH-tC-uDA" id="XKn-te-P8a"/>
+                                            <outlet property="videoTitle" destination="lRz-Wu-ztx" id="LeR-gJ-al9"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
