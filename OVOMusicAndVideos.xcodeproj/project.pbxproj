@@ -54,14 +54,30 @@
 		FCCABA0B1D8750270025E590 /* OVOMusicAndVideos */ = {
 			isa = PBXGroup;
 			children = (
+				FCCABA1F1D8753210025E590 /* Views */,
+				FCCABA1E1D8753110025E590 /* Controllers */,
 				FCCABA0C1D8750270025E590 /* AppDelegate.swift */,
-				FCCABA0E1D8750270025E590 /* ViewController.swift */,
+				FCCABA151D8750280025E590 /* LaunchScreen.storyboard */,
 				FCCABA101D8750280025E590 /* Main.storyboard */,
 				FCCABA131D8750280025E590 /* Assets.xcassets */,
-				FCCABA151D8750280025E590 /* LaunchScreen.storyboard */,
 				FCCABA181D8750280025E590 /* Info.plist */,
 			);
 			path = OVOMusicAndVideos;
+			sourceTree = "<group>";
+		};
+		FCCABA1E1D8753110025E590 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCCABA0E1D8750270025E590 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FCCABA1F1D8753210025E590 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +277,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2WAWR77T4M;
 				INFOPLIST_FILE = OVOMusicAndVideos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.mikael.OVOMusicAndVideos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2WAWR77T4M;
 				INFOPLIST_FILE = OVOMusicAndVideos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.mikael.OVOMusicAndVideos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
