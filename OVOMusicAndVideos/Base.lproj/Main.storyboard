@@ -132,7 +132,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUe-u5-9LK">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUe-u5-9LK" customClass="BaseWebView" customModule="OVOMusicAndVideos" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.57082744155354448" green="0.62277292641052362" blue="0.65420673076923075" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="mzc-Jr-A9g"/>
