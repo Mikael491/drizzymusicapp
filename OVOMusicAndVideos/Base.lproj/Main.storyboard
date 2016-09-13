@@ -112,6 +112,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="pT1-fx-8A2" id="PAp-eg-glb"/>
                         <segue destination="jsV-Dz-Rs3" kind="showDetail" identifier="PlaySongSegue" id="OfX-lM-W1e"/>
                     </connections>
                 </viewController>
