@@ -49,5 +49,34 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let song = tableData[indexPath.row]
+        performSegue(withIdentifier: "PlaySongSegue", sender: song)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? PlaySongViewController {
+            if let song = sender as? OVOMusic {
+                destination.songToPlay = song
+            }
+        }
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
