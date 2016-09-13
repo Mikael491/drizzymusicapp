@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //=============================================================================
         //test if things are working by hard coding objects into array
-        let ovoSong1 = OVOMusic(videoTitle: "Hotline Bling", imageURL: "", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/uxpDa-c-4Mc\" frameborder=\"0\" allowfullscreen></iframe>")
+        let ovoSong1 = OVOMusic(videoTitle: "Hotline Bling", imageURL: "https://i.ytimg.com/vi/uxpDa-c-4Mc/maxresdefault.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/uxpDa-c-4Mc\" frameborder=\"0\" allowfullscreen></iframe>")
         tableData.append(ovoSong1)
         //=================^^^HARDCODED DATA^^^========================================
     }

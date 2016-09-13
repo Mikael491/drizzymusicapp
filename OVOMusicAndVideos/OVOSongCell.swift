@@ -28,7 +28,17 @@ class OVOSongCell: UITableViewCell {
     func updateUI(ovoSong: OVOMusic) {
         videoTitle.text = ovoSong.videoTitle
         
-        //TODO: set cell image
+        DispatchQueue.global().async {
+            do {
+                let url = URL(string: ovoSong.imageURL)
+                let data = try Data(contentsOf: url!)
+                DispatchQueue.global().sync {
+                    self.videoImage.image = UIImage(data: data)
+                }
+            } catch {
+                print("Error was caught :/")
+            }
+        }
         
     }
     

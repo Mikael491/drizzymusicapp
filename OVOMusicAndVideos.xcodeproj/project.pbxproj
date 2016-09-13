@@ -15,6 +15,7 @@
 		FCCABA211D8766E30025E590 /* PlaySongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCABA201D8766E20025E590 /* PlaySongViewController.swift */; };
 		FCCABA241D876E8D0025E590 /* OVOMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCABA231D876E8D0025E590 /* OVOMusic.swift */; };
 		FCCABA291D8773CB0025E590 /* OVOSongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCABA281D8773CB0025E590 /* OVOSongCell.swift */; };
+		FCCABA2B1D8845260025E590 /* BaseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCABA2A1D8845250025E590 /* BaseImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FCCABA201D8766E20025E590 /* PlaySongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySongViewController.swift; sourceTree = "<group>"; };
 		FCCABA231D876E8D0025E590 /* OVOMusic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OVOMusic.swift; sourceTree = "<group>"; };
 		FCCABA281D8773CB0025E590 /* OVOSongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OVOSongCell.swift; sourceTree = "<group>"; };
+		FCCABA2A1D8845250025E590 /* BaseImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		FCCABA1F1D8753210025E590 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FCCABA2A1D8845250025E590 /* BaseImageView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCCABA0F1D8750270025E590 /* ViewController.swift in Sources */,
+				FCCABA2B1D8845260025E590 /* BaseImageView.swift in Sources */,
 				FCCABA211D8766E30025E590 /* PlaySongViewController.swift in Sources */,
 				FCCABA241D876E8D0025E590 /* OVOMusic.swift in Sources */,
 				FCCABA0D1D8750270025E590 /* AppDelegate.swift in Sources */,
