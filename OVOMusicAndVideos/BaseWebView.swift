@@ -11,7 +11,6 @@ import UIKit
 class BaseWebView: UIWebView {
     
     override func awakeFromNib() {
-        self.scalesPageToFit = true
         self.scrollView.isScrollEnabled = false
     }
 }

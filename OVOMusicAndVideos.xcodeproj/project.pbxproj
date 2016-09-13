@@ -64,6 +64,7 @@
 		FCCABA0B1D8750270025E590 /* OVOMusicAndVideos */ = {
 			isa = PBXGroup;
 			children = (
+				FCF993321D8878EB0059E0F2 /* Resources */,
 				FCCABA251D87734A0025E590 /* TableViewCells */,
 				FCCABA221D876E5C0025E590 /* Models */,
 				FCCABA1F1D8753210025E590 /* Views */,
@@ -109,6 +110,13 @@
 				FCCABA281D8773CB0025E590 /* OVOSongCell.swift */,
 			);
 			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		FCF993321D8878EB0059E0F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
