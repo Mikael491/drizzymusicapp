@@ -22,7 +22,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //=============================================================================
         //test if things are working by hard coding objects into array
-        let ovoSong1 = OVOMusic(videoTitle: "Hotline Bling", imageURL: "https://i.ytimg.com/vi/uxpDa-c-4Mc/maxresdefault.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/uxpDa-c-4Mc\" frameborder=\"0\" allowfullscreen></iframe>")
+        let iFrame = "<div class=\"container\"><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/uxpDa-c-4Mc\" frameborder=\"0\" allowfullscreen class=\"video\"></iframe></div>"
+        let embedURL = "https://www.youtube.com/embed/uxpDa-c-4Mc"
+        let ovoSong1 = OVOMusic(videoTitle: "Hotline Bling", imageURL: "https://i.ytimg.com/vi/uxpDa-c-4Mc/maxresdefault.jpg", videoURL: "\(iFrame)")
         tableData.append(ovoSong1)
         //=================^^^HARDCODED DATA^^^========================================
     }
@@ -49,5 +51,34 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let song = tableData[indexPath.row]
+        performSegue(withIdentifier: "PlaySongSegue", sender: song)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? PlaySongViewController {
+            if let song = sender as? OVOMusic {
+                destination.songToPlay = song
+            }
+        }
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
