@@ -10,6 +10,8 @@ import UIKit
 
 class PlaySongViewController: UIViewController {
     
+    @IBOutlet weak var webView: UIWebView!
+    
     private var _songToPlay: OVOMusic!
     
     var songToPlay : OVOMusic {
@@ -22,12 +24,11 @@ class PlaySongViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-            print("=====================================================")
-            print(songToPlay)
-            print("=====================================================")
         
+        webView.loadHTMLString(songToPlay.videoURL, baseURL: nil)
        
     }
 
+    
+    
 }

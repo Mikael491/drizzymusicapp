@@ -146,6 +146,9 @@
                             <constraint firstAttribute="trailing" secondItem="WUe-u5-9LK" secondAttribute="trailing" id="gUQ-pg-Z9Q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="WUe-u5-9LK" id="uha-ey-6fB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueV-VK-5Pk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
