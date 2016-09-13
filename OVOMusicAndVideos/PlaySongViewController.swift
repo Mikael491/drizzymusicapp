@@ -11,6 +11,7 @@ import UIKit
 class PlaySongViewController: UIViewController {
     
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var titleLabel: UILabel!
     
     private var _songToPlay: OVOMusic!
     
@@ -25,6 +26,7 @@ class PlaySongViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        titleLabel.text = songToPlay.videoTitle
         webView.loadHTMLString(songToPlay.videoURL, baseURL: nil)
        
     }

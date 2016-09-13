@@ -138,15 +138,27 @@
                                     <constraint firstAttribute="height" constant="250" id="mzc-Jr-A9g"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFZ-H2-JxH">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="9ve-g1-J6D"/>
+                                    <constraint firstAttribute="width" constant="257" id="hGU-Jl-4Xy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WUe-u5-9LK" firstAttribute="top" secondItem="7yd-kW-ezm" secondAttribute="top" id="Cv8-GE-Hip"/>
                             <constraint firstItem="WUe-u5-9LK" firstAttribute="leading" secondItem="7yd-kW-ezm" secondAttribute="leading" id="bHq-fc-CEB"/>
+                            <constraint firstItem="bFZ-H2-JxH" firstAttribute="centerX" secondItem="7yd-kW-ezm" secondAttribute="centerX" id="f3R-1n-LxL"/>
                             <constraint firstAttribute="trailing" secondItem="WUe-u5-9LK" secondAttribute="trailing" id="gUQ-pg-Z9Q"/>
+                            <constraint firstItem="bFZ-H2-JxH" firstAttribute="centerY" secondItem="7yd-kW-ezm" secondAttribute="centerY" id="wSQ-ad-tnK"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="titleLabel" destination="bFZ-H2-JxH" id="qNl-WT-YcN"/>
                         <outlet property="webView" destination="WUe-u5-9LK" id="uha-ey-6fB"/>
                     </connections>
                 </viewController>
